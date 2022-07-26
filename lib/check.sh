@@ -4,9 +4,9 @@ source color.sh
 
 checkcontrol() {
     listFile=(EKSIKDOSYA) # exp, "check.sh"
-    listModule=(EKSIKPACKAGE)
-    notInstalledFile=()
-    notinstalledModule=()
+    listModule=(EKSIKPACKAGE) # exp, "aircrack-ng"
+    notInstalledFile=() # Empty
+    notinstalledModule=() # Empty
     echo -e "$blue==========FILE CHECK==========$normal\n"
     for ((i=0;i<${#listFile[@]};i++)); do
         name=${listFile[$i]}
