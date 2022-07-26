@@ -3,8 +3,8 @@
 source color.sh
 
 checkcontrol() {
-    listFile=(EKSIKDOSYA) # exp, "check.sh"
-    listModule=(EKSIKPACKAGE) # exp, "aircrack-ng"
+    listFile=(EKSIKDOSYA) # e.g, "check.sh"
+    listModule=(EKSIKPACKAGE) # e.g, "aircrack-ng"
     notInstalledFile=() # Empty
     notinstalledModule=() # Empty
     echo -e "$blue==========FILE CHECK==========$normal\n"
