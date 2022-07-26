@@ -1,10 +1,11 @@
 #!/bin/bash
+source color.sh
 
 checkcontrol() {
     listcheck=(EKSIKDOSYA) # exp, "check.sh"
     listmodul=(EKSIKPACKAGE)
-    listnot=()
-    listnotmodul=()
+    listnot=() # bos olacak
+    listnotmodul=() # bos olacak
     echo -e "$blue==========FILE CHECK==========$normal\n"
     for ((i=0;i<${#listcheck[@]};i++)); do
         name=${listcheck[$i]}
