@@ -47,7 +47,7 @@ checkcontrol() {
             fi
         done
         if [[ $notInstalledModuleCount> 0 ]];then
-            echo "Yuklenemeyen dosyalar oldugundan cikis yapiliyor..."
+            echo "Yuklenemeyen dosyalar bulunmakta. Elle kurulum yapmalısınız..."
         fi
     fi
 }
