@@ -18,7 +18,7 @@ checkcontrol() {
         fi
     done
     if [[ ${#notInstalledFile[@]} -gt 0 ]]; then
-        echo -e "$red[!] ${notInstalledFile} adli modul/moduller bulunmadi tekrar yukleyiniz."
+        echo -e "$red[!] ${notInstalledFile} adli modul/moduller bulunmadi tekrar yukleyiniz.$normal"
     fi
     echo -e "\n$blue==========PACKAGE CHECK==========$normal\n"
     for ((i=0;i<${#listModule[@]};i++)); do
