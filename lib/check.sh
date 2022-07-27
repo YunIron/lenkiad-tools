@@ -19,7 +19,6 @@ checkcontrol() {
     done
     if [[ ${#notInstalledFile[@]} -gt 0 ]]; then
         echo -e "$red[!] ${notInstalledFile} adli modul/moduller bulunmadi tekrar yukleyiniz."
-        exit 1
     fi
     echo -e "\n$blue==========PACKAGE CHECK==========$normal\n"
     for ((i=0;i<${#listModule[@]};i++)); do
@@ -49,7 +48,6 @@ checkcontrol() {
         done
         if [[ $notInstalledModuleCount> 0 ]];then
             echo "Yuklenemeyen dosyalar oldugundan cikis yapiliyor..."
-            exit 1
         fi
     fi
 }
